@@ -73,20 +73,3 @@ Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
-/Content/Animations
-/Content/Assets/Animations
-/Content/Audio
-/Content/Automatic_Gun
-/Content/Cyberpunk_AssaultRifles
-/Content/Cyberpunk_Handguns
-/Content/Cyberpunk_RPG_UI
-/Content/FPS
-/Content/FPS_HUD
-/Content/Marketplace
-/Content/Modern_Shooting_UI_Pack
-/Content/Policeman
-/Content/References
-/Content/SciFiSoldier
-/Content/DynamicCrosshair
-/Content
-/Content
