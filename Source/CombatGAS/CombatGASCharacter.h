@@ -3,10 +3,13 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Character/CombatGASBaseCharacter.h"
 #include "GameFramework/Character.h"
 #include "Logging/LogMacros.h"
 #include "CombatGASCharacter.generated.h"
 
+class UBasicAttributeSet;
+struct FGameplayTag;
 class USpringArmComponent;
 class UCameraComponent;
 class UInputAction;
@@ -19,7 +22,7 @@ DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
  *  Implements a controllable orbiting camera
  */
 UCLASS(abstract)
-class ACombatGASCharacter : public ACharacter
+class ACombatGASCharacter : public ACombatGASBaseCharacter
 {
 	GENERATED_BODY()
 
@@ -48,11 +51,30 @@ protected:
 	/** Mouse Look Input Action */
 	UPROPERTY(EditAnywhere, Category="Input")
 	UInputAction* MouseLookAction;
+	
+	UPROPERTY(EditAnywhere, Category="Input|Abilities")
+	TObjectPtr<UInputAction> PrimaryAction;
+	
+	UPROPERTY(EditAnywhere, Category="Input|Abilities")
+	TObjectPtr<UInputAction> SecondaryAction;
+	
+	UPROPERTY(EditAnywhere, Category="Input|Abilities")
+	TObjectPtr<UInputAction> TertiaryAction;
+	
+	UPROPERTY(EditAnywhere, Category="Input|Abilities")
+	TObjectPtr<UInputAction> DashAction;
 
 public:
 
 	/** Constructor */
 	ACombatGASCharacter();	
+	
+    virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
+	virtual void PossessedBy(AController* NewController) override;
+	virtual void OnRep_PlayerState() override;
+	
+	
+	
 
 protected:
 
@@ -66,6 +88,16 @@ protected:
 
 	/** Called for looking input */
 	void Look(const FInputActionValue& Value);
+	
+	void Primary();
+	void Secondary();
+	void Tertiary();
+	void DashAbility();
+	
+	void ActivateAbility(const FGameplayTag& AbilityTag) const;
+	
+	UFUNCTION(BlueprintPure, Category="AbilitySystem")
+	UBasicAttributeSet* GetBasicAttributeSet() const;
 
 public:
 

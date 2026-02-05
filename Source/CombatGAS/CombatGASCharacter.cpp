@@ -1,6 +1,8 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "CombatGASCharacter.h"
+
+#include "AbilitySystemComponent.h"
 #include "Engine/LocalPlayer.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -9,11 +11,16 @@
 #include "GameFramework/Controller.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
+#include "AbilitySystemBlueprintLibrary.h"
 #include "InputActionValue.h"
 #include "CombatGAS.h"
+#include "Abilities/AttributeSets/BasicAttributeSet.h"
+#include "GameplayTags/CombatGASTags.h"
+#include "Player/CombatGASPlayerState.h"
 
 ACombatGASCharacter::ACombatGASCharacter()
 {
+	
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 		
@@ -24,7 +31,7 @@ ACombatGASCharacter::ACombatGASCharacter()
 
 	// Configure character movement
 	GetCharacterMovement()->bOrientRotationToMovement = true;
-	GetCharacterMovement()->RotationRate = FRotator(0.0f, 500.0f, 0.0f);
+	GetCharacterMovement()->RotationRate = FRotator(0.0f, 540.0f, 0.0f);
 
 	// Note: For faster iteration times these variables, and many more, can be tweaked in the Character Blueprint
 	// instead of recompiling to adjust them
@@ -38,16 +45,46 @@ ACombatGASCharacter::ACombatGASCharacter()
 	// Create a camera boom (pulls in towards the player if there is a collision)
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoom->SetupAttachment(RootComponent);
-	CameraBoom->TargetArmLength = 400.0f;
+	CameraBoom->TargetArmLength = 600.0f;
 	CameraBoom->bUsePawnControlRotation = true;
 
 	// Create a follow camera
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	FollowCamera->bUsePawnControlRotation = false;
+	
+	
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
+}
+
+UAbilitySystemComponent* ACombatGASCharacter::GetAbilitySystemComponent() const
+{
+	ACombatGASPlayerState* CombatGASPlayerState = Cast<ACombatGASPlayerState>(GetPlayerState());
+	if (!IsValid(CombatGASPlayerState)) return nullptr;
+	
+	return CombatGASPlayerState->GetAbilitySystemComponent();
+	
+}
+
+void ACombatGASCharacter::PossessedBy(AController* NewController)
+{
+	Super::PossessedBy(NewController);
+	
+	if (!IsValid(GetAbilitySystemComponent()) || !HasAuthority()) return;
+	
+	GetAbilitySystemComponent()->InitAbilityActorInfo(GetPlayerState(), this);
+	GiveStartUpAbilities();
+}
+
+void ACombatGASCharacter::OnRep_PlayerState()
+{
+	Super::OnRep_PlayerState();
+	
+	if (!IsValid(GetAbilitySystemComponent())) return;
+	
+	GetAbilitySystemComponent()->InitAbilityActorInfo(GetPlayerState(), this);
 }
 
 void ACombatGASCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -65,6 +102,14 @@ void ACombatGASCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInput
 
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ACombatGASCharacter::Look);
+		
+		//Primary Ability
+		EnhancedInputComponent->BindAction(PrimaryAction, ETriggerEvent::Started, this, &ACombatGASCharacter::Primary);
+		EnhancedInputComponent->BindAction(SecondaryAction, ETriggerEvent::Started, this, &ACombatGASCharacter::Secondary);
+		EnhancedInputComponent->BindAction(TertiaryAction, ETriggerEvent::Started, this, &ACombatGASCharacter::Tertiary);
+		EnhancedInputComponent->BindAction(DashAction, ETriggerEvent::Started, this, &ACombatGASCharacter::DashAbility);
+		
+		
 	}
 	else
 	{
@@ -88,6 +133,40 @@ void ACombatGASCharacter::Look(const FInputActionValue& Value)
 
 	// route the input
 	DoLook(LookAxisVector.X, LookAxisVector.Y);
+}
+
+void ACombatGASCharacter::Primary()
+{
+	ActivateAbility(CombatTags::CombatAbilities::Primary);
+}
+
+void ACombatGASCharacter::Secondary()
+{
+	ActivateAbility(CombatTags::CombatAbilities::Secondary);
+}
+
+void ACombatGASCharacter::Tertiary()
+{
+	ActivateAbility(CombatTags::CombatAbilities::Tertiary);
+}
+
+void ACombatGASCharacter::DashAbility()
+{
+	ActivateAbility(CombatTags::CombatAbilities::Dash);
+}
+
+void ACombatGASCharacter::ActivateAbility(const FGameplayTag& AbilityTag) const
+{
+	UAbilitySystemComponent* ASC = GetAbilitySystemComponent();	
+	if (!IsValid(ASC)) return;
+	
+	ASC->TryActivateAbilitiesByTag(AbilityTag.GetSingleTagContainer());
+}
+
+UBasicAttributeSet* ACombatGASCharacter::GetBasicAttributeSet() const
+{
+	const ACombatGASPlayerState* PS = GetPlayerState<ACombatGASPlayerState>();
+	return PS ? PS->GetBasicAttributeSet() : nullptr;
 }
 
 void ACombatGASCharacter::DoMove(float Right, float Forward)

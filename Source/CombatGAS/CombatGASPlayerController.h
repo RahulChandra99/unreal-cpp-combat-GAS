@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "InputAction.h"
 #include "GameFramework/PlayerController.h"
 #include "CombatGASPlayerController.generated.h"
 
@@ -27,10 +28,14 @@ protected:
 	/** Input Mapping Contexts */
 	UPROPERTY(EditAnywhere, Category="Input|Input Mappings")
 	TArray<UInputMappingContext*> MobileExcludedMappingContexts;
+	
+	
 
 	/** Mobile controls widget to spawn */
 	UPROPERTY(EditAnywhere, Category="Input|Touch Controls")
 	TSubclassOf<UUserWidget> MobileControlsWidgetClass;
+	
+	
 
 	/** Pointer to the mobile controls widget */
 	UPROPERTY()
@@ -48,5 +53,7 @@ protected:
 
 	/** Returns true if the player should use UMG touch controls */
 	bool ShouldUseTouchControls() const;
+	
+	
 
 };

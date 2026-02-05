@@ -56,6 +56,7 @@ void ACombatGASPlayerController::SetupInputComponent()
 					Subsystem->AddMappingContext(CurrentContext, 0);
 				}
 			}
+			
 		}
 	}
 }
@@ -65,3 +66,5 @@ bool ACombatGASPlayerController::ShouldUseTouchControls() const
 	// are we on a mobile platform? Should we force touch?
 	return SVirtualJoystick::ShouldDisplayTouchInterface() || bForceTouchControls;
 }
+
+
