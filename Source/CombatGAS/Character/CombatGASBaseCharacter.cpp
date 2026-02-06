@@ -2,7 +2,7 @@
 
 
 #include "CombatGASBaseCharacter.h"
-
+#include "Abilities/AttributeSets/BasicAttributeSet.h"
 #include "AbilitySystemComponent.h"
 #include "GameplayAbilitySpec.h"
 
@@ -14,12 +14,17 @@ ACombatGASBaseCharacter::ACombatGASBaseCharacter()
 	//tick and refresh bone transforms whether rendered or not
 	GetMesh()->VisibilityBasedAnimTickOption = EVisibilityBasedAnimTickOption::AlwaysTickPoseAndRefreshBones;
 	
+	// Add the ability system component
+	AbilitySystemComponent = CreateDefaultSubobject<UAbilitySystemComponent>(TEXT("AbilitySystemComponent"));
+	AbilitySystemComponent->SetIsReplicated(true);
+	AbilitySystemComponent->SetReplicationMode(EGameplayEffectReplicationMode::Mixed);
+	
+	// Add the basic attribute set
+	BasicAttributeSet = CreateDefaultSubobject<UBasicAttributeSet>(TEXT("BasicAttributeSet"));
+	
 }
 
-UAbilitySystemComponent* ACombatGASBaseCharacter::GetAbilitySystemComponent() const
-{
-	return nullptr;
-}
+
 
 void ACombatGASBaseCharacter::GiveStartUpAbilities()
 {
@@ -41,4 +46,7 @@ void ACombatGASBaseCharacter::InitializeAbilities() const
 	//GetAbilitySystemComponent()->MakeOutgoingSpec()
 }
 
-
+UAbilitySystemComponent* ACombatGASBaseCharacter::GetAbilitySystemComponent() const
+{
+	return AbilitySystemComponent;
+}

@@ -69,7 +69,6 @@ public:
 	/** Constructor */
 	ACombatGASCharacter();	
 	
-    virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 	virtual void PossessedBy(AController* NewController) override;
 	virtual void OnRep_PlayerState() override;
 	
@@ -96,9 +95,7 @@ protected:
 	
 	
 	void ActivateAbility(const FGameplayTag& AbilityTag) const;
-	
-	UFUNCTION(BlueprintPure, Category="AbilitySystem")
-	UBasicAttributeSet* GetBasicAttributeSet() const;
+
 
 public:
 

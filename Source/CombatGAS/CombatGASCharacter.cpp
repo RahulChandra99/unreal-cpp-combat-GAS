@@ -16,7 +16,7 @@
 #include "CombatGAS.h"
 #include "Abilities/AttributeSets/BasicAttributeSet.h"
 #include "GameplayTags/CombatGASTags.h"
-#include "Player/CombatGASPlayerState.h"
+
 
 ACombatGASCharacter::ACombatGASCharacter()
 {
@@ -59,32 +59,24 @@ ACombatGASCharacter::ACombatGASCharacter()
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
 }
 
-UAbilitySystemComponent* ACombatGASCharacter::GetAbilitySystemComponent() const
-{
-	ACombatGASPlayerState* CombatGASPlayerState = Cast<ACombatGASPlayerState>(GetPlayerState());
-	if (!IsValid(CombatGASPlayerState)) return nullptr;
-	
-	return CombatGASPlayerState->GetAbilitySystemComponent();
-	
-}
-
 void ACombatGASCharacter::PossessedBy(AController* NewController)
 {
 	Super::PossessedBy(NewController);
-	
-	if (!IsValid(GetAbilitySystemComponent()) || !HasAuthority()) return;
-	
-	GetAbilitySystemComponent()->InitAbilityActorInfo(GetPlayerState(), this);
-	GiveStartUpAbilities();
+
+	if (AbilitySystemComponent)
+	{
+		AbilitySystemComponent->InitAbilityActorInfo(this, this);
+	}
 }
 
 void ACombatGASCharacter::OnRep_PlayerState()
 {
 	Super::OnRep_PlayerState();
-	
-	if (!IsValid(GetAbilitySystemComponent())) return;
-	
-	GetAbilitySystemComponent()->InitAbilityActorInfo(GetPlayerState(), this);
+
+	if (AbilitySystemComponent)
+	{
+		AbilitySystemComponent->InitAbilityActorInfo(this, this);
+	}
 }
 
 void ACombatGASCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -160,11 +152,6 @@ void ACombatGASCharacter::ActivateAbility(const FGameplayTag& AbilityTag) const
 	ASC->TryActivateAbilitiesByTag(AbilityTag.GetSingleTagContainer());
 }
 
-UBasicAttributeSet* ACombatGASCharacter::GetBasicAttributeSet() const
-{
-	const ACombatGASPlayerState* PS = GetPlayerState<ACombatGASPlayerState>();
-	return PS ? PS->GetBasicAttributeSet() : nullptr;
-}
 
 void ACombatGASCharacter::DoMove(float Right, float Forward)
 {
