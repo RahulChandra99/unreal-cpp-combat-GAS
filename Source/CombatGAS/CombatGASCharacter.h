@@ -92,7 +92,8 @@ protected:
 	void Primary();
 	void Secondary();
 	void Tertiary();
-	void DashAbility();
+
+	
 	
 	void ActivateAbility(const FGameplayTag& AbilityTag) const;
 	

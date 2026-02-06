@@ -107,7 +107,6 @@ void ACombatGASCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInput
 		EnhancedInputComponent->BindAction(PrimaryAction, ETriggerEvent::Started, this, &ACombatGASCharacter::Primary);
 		EnhancedInputComponent->BindAction(SecondaryAction, ETriggerEvent::Started, this, &ACombatGASCharacter::Secondary);
 		EnhancedInputComponent->BindAction(TertiaryAction, ETriggerEvent::Started, this, &ACombatGASCharacter::Tertiary);
-		EnhancedInputComponent->BindAction(DashAction, ETriggerEvent::Started, this, &ACombatGASCharacter::DashAbility);
 		
 		
 	}
@@ -150,10 +149,8 @@ void ACombatGASCharacter::Tertiary()
 	ActivateAbility(CombatTags::CombatAbilities::Tertiary);
 }
 
-void ACombatGASCharacter::DashAbility()
-{
-	ActivateAbility(CombatTags::CombatAbilities::Dash);
-}
+
+
 
 void ACombatGASCharacter::ActivateAbility(const FGameplayTag& AbilityTag) const
 {

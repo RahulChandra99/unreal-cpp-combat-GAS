@@ -1,12 +1,12 @@
-"C:/Users/Felix/Documents/Unreal Projects/UE57/Plugins/DarkerNodes 5.7/DarkerNodes/Intermediate/Build/Win64/x64/UnrealEditor/Development/DarkerNodes/Module.DarkerNodes.cpp"
-@"C:/Users/Felix/Documents/Unreal Projects/UE57/Plugins/DarkerNodes 5.7/DarkerNodes/Intermediate/Build/Win64/x64/UnrealEditor/Development/DarkerNodes/DarkerNodes.Shared.rsp"
-/FI"C:/Users/Felix/Documents/Unreal Projects/UE57/Intermediate/Build/Win64/x64/UE57Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h"
-/FI"C:/Users/Felix/Documents/Unreal Projects/UE57/Plugins/DarkerNodes 5.7/DarkerNodes/Intermediate/Build/Win64/x64/UnrealEditor/Development/DarkerNodes/Definitions.DarkerNodes.h"
-/Yu"C:/Users/Felix/Documents/Unreal Projects/UE57/Intermediate/Build/Win64/x64/UE57Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h"
-/Fp"C:/Users/Felix/Documents/Unreal Projects/UE57/Intermediate/Build/Win64/x64/UE57Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.pch"
-/Fo"C:/Users/Felix/Documents/Unreal Projects/UE57/Plugins/DarkerNodes 5.7/DarkerNodes/Intermediate/Build/Win64/x64/UnrealEditor/Development/DarkerNodes/Module.DarkerNodes.cpp.obj"
-/experimental:log "C:/Users/Felix/Documents/Unreal Projects/UE57/Plugins/DarkerNodes 5.7/DarkerNodes/Intermediate/Build/Win64/x64/UnrealEditor/Development/DarkerNodes/Module.DarkerNodes.cpp.sarif"
-/sourceDependencies "C:/Users/Felix/Documents/Unreal Projects/UE57/Plugins/DarkerNodes 5.7/DarkerNodes/Intermediate/Build/Win64/x64/UnrealEditor/Development/DarkerNodes/Module.DarkerNodes.cpp.dep.json"
+"D:/GameDevelopment/UnrealEngine/Projects/unreal-cpp-combat-GAS/Plugins/DarkerNodes/Intermediate/Build/Win64/x64/UnrealEditor/Development/DarkerNodes/Module.DarkerNodes.cpp"
+@"D:/GameDevelopment/UnrealEngine/Projects/unreal-cpp-combat-GAS/Plugins/DarkerNodes/Intermediate/Build/Win64/x64/UnrealEditor/Development/DarkerNodes/DarkerNodes.Shared.rsp"
+/FI"D:/GameDevelopment/UnrealEngine/Projects/unreal-cpp-combat-GAS/Intermediate/Build/Win64/x64/CombatGASEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h"
+/FI"D:/GameDevelopment/UnrealEngine/Projects/unreal-cpp-combat-GAS/Plugins/DarkerNodes/Intermediate/Build/Win64/x64/UnrealEditor/Development/DarkerNodes/Definitions.DarkerNodes.h"
+/Yu"D:/GameDevelopment/UnrealEngine/Projects/unreal-cpp-combat-GAS/Intermediate/Build/Win64/x64/CombatGASEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h"
+/Fp"D:/GameDevelopment/UnrealEngine/Projects/unreal-cpp-combat-GAS/Intermediate/Build/Win64/x64/CombatGASEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.pch"
+/Fo"D:/GameDevelopment/UnrealEngine/Projects/unreal-cpp-combat-GAS/Plugins/DarkerNodes/Intermediate/Build/Win64/x64/UnrealEditor/Development/DarkerNodes/Module.DarkerNodes.cpp.obj"
+/experimental:log "D:/GameDevelopment/UnrealEngine/Projects/unreal-cpp-combat-GAS/Plugins/DarkerNodes/Intermediate/Build/Win64/x64/UnrealEditor/Development/DarkerNodes/Module.DarkerNodes.cpp.sarif"
+/sourceDependencies "D:/GameDevelopment/UnrealEngine/Projects/unreal-cpp-combat-GAS/Plugins/DarkerNodes/Intermediate/Build/Win64/x64/UnrealEditor/Development/DarkerNodes/Module.DarkerNodes.cpp.dep.json"
 /d2ssa-cfg-question-
 /nologo
 /Oi

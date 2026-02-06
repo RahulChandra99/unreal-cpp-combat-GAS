@@ -20,7 +20,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct Z_Construct_UClass_UBrushDatabase_Statics;
 DARKERNODES_API UClass* Z_Construct_UClass_UBrushDatabase_NoRegister();
 
-#define FID_Users_Felix_Documents_Unreal_Projects_UE57_Plugins_DarkerNodes_5_7_DarkerNodes_Source_DarkerNodes_Private_Lib_BrushDatabase_h_16_INCLASS_NO_PURE_DECLS \
+#define FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNodes_Source_DarkerNodes_Private_Lib_BrushDatabase_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUBrushDatabase(); \
 	friend struct ::Z_Construct_UClass_UBrushDatabase_Statics; \
@@ -31,7 +31,7 @@ public: \
 	DECLARE_SERIALIZER(UBrushDatabase)
 
 
-#define FID_Users_Felix_Documents_Unreal_Projects_UE57_Plugins_DarkerNodes_5_7_DarkerNodes_Source_DarkerNodes_Private_Lib_BrushDatabase_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNodes_Source_DarkerNodes_Private_Lib_BrushDatabase_h_16_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UBrushDatabase(UBrushDatabase&&) = delete; \
 	UBrushDatabase(const UBrushDatabase&) = delete; \
@@ -41,12 +41,12 @@ public: \
 	NO_API virtual ~UBrushDatabase();
 
 
-#define FID_Users_Felix_Documents_Unreal_Projects_UE57_Plugins_DarkerNodes_5_7_DarkerNodes_Source_DarkerNodes_Private_Lib_BrushDatabase_h_13_PROLOG
-#define FID_Users_Felix_Documents_Unreal_Projects_UE57_Plugins_DarkerNodes_5_7_DarkerNodes_Source_DarkerNodes_Private_Lib_BrushDatabase_h_16_GENERATED_BODY \
+#define FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNodes_Source_DarkerNodes_Private_Lib_BrushDatabase_h_13_PROLOG
+#define FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNodes_Source_DarkerNodes_Private_Lib_BrushDatabase_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_Felix_Documents_Unreal_Projects_UE57_Plugins_DarkerNodes_5_7_DarkerNodes_Source_DarkerNodes_Private_Lib_BrushDatabase_h_16_INCLASS_NO_PURE_DECLS \
-	FID_Users_Felix_Documents_Unreal_Projects_UE57_Plugins_DarkerNodes_5_7_DarkerNodes_Source_DarkerNodes_Private_Lib_BrushDatabase_h_16_ENHANCED_CONSTRUCTORS \
+	FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNodes_Source_DarkerNodes_Private_Lib_BrushDatabase_h_16_INCLASS_NO_PURE_DECLS \
+	FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNodes_Source_DarkerNodes_Private_Lib_BrushDatabase_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -56,6 +56,6 @@ class UBrushDatabase;
 // ********** End Class UBrushDatabase *************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_Felix_Documents_Unreal_Projects_UE57_Plugins_DarkerNodes_5_7_DarkerNodes_Source_DarkerNodes_Private_Lib_BrushDatabase_h
+#define CURRENT_FILE_ID FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNodes_Source_DarkerNodes_Private_Lib_BrushDatabase_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

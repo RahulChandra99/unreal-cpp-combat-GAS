@@ -17,7 +17,7 @@ static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compi
 			nullptr,
 			0,
 			PKG_CompiledIn | 0x00000040,
-			0xF13A660A,
+			0x0035B4A4,
 			0x4FA9FD2A,
 			METADATA_PARAMS(0, nullptr)
 		};
@@ -25,5 +25,5 @@ static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compi
 	}
 	return Z_Registration_Info_UPackage__Script_DarkerNodes.OuterSingleton;
 }
-static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_DarkerNodes(Z_Construct_UPackage__Script_DarkerNodes, TEXT("/Script/DarkerNodes"), Z_Registration_Info_UPackage__Script_DarkerNodes, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xF13A660A, 0x4FA9FD2A));
+static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_DarkerNodes(Z_Construct_UPackage__Script_DarkerNodes, TEXT("/Script/DarkerNodes"), Z_Registration_Info_UPackage__Script_DarkerNodes, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x0035B4A4, 0x4FA9FD2A));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

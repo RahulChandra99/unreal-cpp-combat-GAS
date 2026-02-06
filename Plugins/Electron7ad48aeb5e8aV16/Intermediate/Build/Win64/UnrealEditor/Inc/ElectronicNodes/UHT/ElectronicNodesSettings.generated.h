@@ -20,7 +20,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct Z_Construct_UClass_UElectronicNodesSettings_Statics;
 ELECTRONICNODES_API UClass* Z_Construct_UClass_UElectronicNodesSettings_NoRegister();
 
-#define FID_Users_Felix_Documents_Unreal_Projects_UE57_Plugins_ElectronicNodes_5_7_Electron7ad48aeb5e8aV16_Source_ElectronicNodes_Public_ElectronicNodesSettings_h_58_INCLASS_NO_PURE_DECLS \
+#define FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_Electron7ad48aeb5e8aV16_Source_ElectronicNodes_Public_ElectronicNodesSettings_h_58_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUElectronicNodesSettings(); \
 	friend struct ::Z_Construct_UClass_UElectronicNodesSettings_Statics; \
@@ -33,7 +33,7 @@ public: \
 
 
 
-#define FID_Users_Felix_Documents_Unreal_Projects_UE57_Plugins_ElectronicNodes_5_7_Electron7ad48aeb5e8aV16_Source_ElectronicNodes_Public_ElectronicNodesSettings_h_58_ENHANCED_CONSTRUCTORS \
+#define FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_Electron7ad48aeb5e8aV16_Source_ElectronicNodes_Public_ElectronicNodesSettings_h_58_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UElectronicNodesSettings(UElectronicNodesSettings&&) = delete; \
 	UElectronicNodesSettings(const UElectronicNodesSettings&) = delete; \
@@ -43,12 +43,12 @@ public: \
 	NO_API virtual ~UElectronicNodesSettings();
 
 
-#define FID_Users_Felix_Documents_Unreal_Projects_UE57_Plugins_ElectronicNodes_5_7_Electron7ad48aeb5e8aV16_Source_ElectronicNodes_Public_ElectronicNodesSettings_h_55_PROLOG
-#define FID_Users_Felix_Documents_Unreal_Projects_UE57_Plugins_ElectronicNodes_5_7_Electron7ad48aeb5e8aV16_Source_ElectronicNodes_Public_ElectronicNodesSettings_h_58_GENERATED_BODY \
+#define FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_Electron7ad48aeb5e8aV16_Source_ElectronicNodes_Public_ElectronicNodesSettings_h_55_PROLOG
+#define FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_Electron7ad48aeb5e8aV16_Source_ElectronicNodes_Public_ElectronicNodesSettings_h_58_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_Felix_Documents_Unreal_Projects_UE57_Plugins_ElectronicNodes_5_7_Electron7ad48aeb5e8aV16_Source_ElectronicNodes_Public_ElectronicNodesSettings_h_58_INCLASS_NO_PURE_DECLS \
-	FID_Users_Felix_Documents_Unreal_Projects_UE57_Plugins_ElectronicNodes_5_7_Electron7ad48aeb5e8aV16_Source_ElectronicNodes_Public_ElectronicNodesSettings_h_58_ENHANCED_CONSTRUCTORS \
+	FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_Electron7ad48aeb5e8aV16_Source_ElectronicNodes_Public_ElectronicNodesSettings_h_58_INCLASS_NO_PURE_DECLS \
+	FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_Electron7ad48aeb5e8aV16_Source_ElectronicNodes_Public_ElectronicNodesSettings_h_58_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -58,7 +58,7 @@ class UElectronicNodesSettings;
 // ********** End Class UElectronicNodesSettings ***************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_Felix_Documents_Unreal_Projects_UE57_Plugins_ElectronicNodes_5_7_Electron7ad48aeb5e8aV16_Source_ElectronicNodes_Public_ElectronicNodesSettings_h
+#define CURRENT_FILE_ID FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_Electron7ad48aeb5e8aV16_Source_ElectronicNodes_Public_ElectronicNodesSettings_h
 
 // ********** Begin Enum EWireStyle ****************************************************************
 #define FOREACH_ENUM_EWIRESTYLE(op) \

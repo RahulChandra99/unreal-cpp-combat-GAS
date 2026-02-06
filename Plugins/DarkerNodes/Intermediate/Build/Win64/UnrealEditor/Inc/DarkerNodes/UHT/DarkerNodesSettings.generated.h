@@ -20,7 +20,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct Z_Construct_UClass_UDarkerNodesSettings_Statics;
 DARKERNODES_API UClass* Z_Construct_UClass_UDarkerNodesSettings_NoRegister();
 
-#define FID_Users_Felix_Documents_Unreal_Projects_UE57_Plugins_DarkerNodes_5_7_DarkerNodes_Source_DarkerNodes_Public_DarkerNodesSettings_h_103_INCLASS_NO_PURE_DECLS \
+#define FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNodes_Source_DarkerNodes_Public_DarkerNodesSettings_h_103_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUDarkerNodesSettings(); \
 	friend struct ::Z_Construct_UClass_UDarkerNodesSettings_Statics; \
@@ -33,7 +33,7 @@ public: \
 
 
 
-#define FID_Users_Felix_Documents_Unreal_Projects_UE57_Plugins_DarkerNodes_5_7_DarkerNodes_Source_DarkerNodes_Public_DarkerNodesSettings_h_103_ENHANCED_CONSTRUCTORS \
+#define FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNodes_Source_DarkerNodes_Public_DarkerNodesSettings_h_103_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UDarkerNodesSettings(UDarkerNodesSettings&&) = delete; \
 	UDarkerNodesSettings(const UDarkerNodesSettings&) = delete; \
@@ -43,12 +43,12 @@ public: \
 	NO_API virtual ~UDarkerNodesSettings();
 
 
-#define FID_Users_Felix_Documents_Unreal_Projects_UE57_Plugins_DarkerNodes_5_7_DarkerNodes_Source_DarkerNodes_Public_DarkerNodesSettings_h_100_PROLOG
-#define FID_Users_Felix_Documents_Unreal_Projects_UE57_Plugins_DarkerNodes_5_7_DarkerNodes_Source_DarkerNodes_Public_DarkerNodesSettings_h_103_GENERATED_BODY \
+#define FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNodes_Source_DarkerNodes_Public_DarkerNodesSettings_h_100_PROLOG
+#define FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNodes_Source_DarkerNodes_Public_DarkerNodesSettings_h_103_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_Felix_Documents_Unreal_Projects_UE57_Plugins_DarkerNodes_5_7_DarkerNodes_Source_DarkerNodes_Public_DarkerNodesSettings_h_103_INCLASS_NO_PURE_DECLS \
-	FID_Users_Felix_Documents_Unreal_Projects_UE57_Plugins_DarkerNodes_5_7_DarkerNodes_Source_DarkerNodes_Public_DarkerNodesSettings_h_103_ENHANCED_CONSTRUCTORS \
+	FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNodes_Source_DarkerNodes_Public_DarkerNodesSettings_h_103_INCLASS_NO_PURE_DECLS \
+	FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNodes_Source_DarkerNodes_Public_DarkerNodesSettings_h_103_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -58,7 +58,7 @@ class UDarkerNodesSettings;
 // ********** End Class UDarkerNodesSettings *******************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_Felix_Documents_Unreal_Projects_UE57_Plugins_DarkerNodes_5_7_DarkerNodes_Source_DarkerNodes_Public_DarkerNodesSettings_h
+#define CURRENT_FILE_ID FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNodes_Source_DarkerNodes_Public_DarkerNodesSettings_h
 
 // ********** Begin Enum EPresets ******************************************************************
 #define FOREACH_ENUM_EPRESETS(op) \
