@@ -59,25 +59,6 @@ ACombatGASCharacter::ACombatGASCharacter()
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
 }
 
-void ACombatGASCharacter::PossessedBy(AController* NewController)
-{
-	Super::PossessedBy(NewController);
-
-	if (AbilitySystemComponent)
-	{
-		AbilitySystemComponent->InitAbilityActorInfo(this, this);
-	}
-}
-
-void ACombatGASCharacter::OnRep_PlayerState()
-{
-	Super::OnRep_PlayerState();
-
-	if (AbilitySystemComponent)
-	{
-		AbilitySystemComponent->InitAbilityActorInfo(this, this);
-	}
-}
 
 void ACombatGASCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {

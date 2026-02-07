@@ -2,9 +2,12 @@
 
 
 #include "CombatGASBaseCharacter.h"
+
+#include "AbilitySystemBlueprintLibrary.h"
 #include "Abilities/AttributeSets/BasicAttributeSet.h"
 #include "AbilitySystemComponent.h"
 #include "GameplayAbilitySpec.h"
+#include "Abilities/CustomAbilitySystemComponent.h"
 
 
 // Sets default values
@@ -15,7 +18,7 @@ ACombatGASBaseCharacter::ACombatGASBaseCharacter()
 	GetMesh()->VisibilityBasedAnimTickOption = EVisibilityBasedAnimTickOption::AlwaysTickPoseAndRefreshBones;
 	
 	// Add the ability system component
-	AbilitySystemComponent = CreateDefaultSubobject<UAbilitySystemComponent>(TEXT("AbilitySystemComponent"));
+	AbilitySystemComponent = CreateDefaultSubobject<UCustomAbilitySystemComponent>(TEXT("AbilitySystemComponent"));
 	AbilitySystemComponent->SetIsReplicated(true);
 	AbilitySystemComponent->SetReplicationMode(EGameplayEffectReplicationMode::Mixed);
 	
@@ -25,6 +28,44 @@ ACombatGASBaseCharacter::ACombatGASBaseCharacter()
 }
 
 
+TArray<FGameplayAbilitySpecHandle> ACombatGASBaseCharacter::GrantAbilities(
+	TArray<TSubclassOf<UGameplayAbility>> AbilitiesToGrant)
+{
+	if (!AbilitySystemComponent || !HasAuthority()) return TArray<FGameplayAbilitySpecHandle>();
+	
+	TArray<FGameplayAbilitySpecHandle> AbilityHandles;
+	
+	for (TSubclassOf<UGameplayAbility> Ability : AbilitiesToGrant)
+	{
+		FGameplayAbilitySpecHandle SpecHandle = AbilitySystemComponent->GiveAbility(FGameplayAbilitySpec(Ability, 1, -1, this));
+		AbilityHandles.Add(SpecHandle);
+	}
+	
+	SendAbilitiesChangedEvent();
+	return AbilityHandles;
+}
+
+void ACombatGASBaseCharacter::RemoveAbilities(TArray<FGameplayAbilitySpecHandle> AbilitiesToRemove)
+{
+	if (!AbilitySystemComponent || !HasAuthority()) return;
+	
+	for (FGameplayAbilitySpecHandle AbilityHandle : AbilitiesToRemove)
+	{
+		AbilitySystemComponent->ClearAbility(AbilityHandle);
+	}
+	
+	SendAbilitiesChangedEvent();
+}
+
+void ACombatGASBaseCharacter::SendAbilitiesChangedEvent()
+{
+	FGameplayEventData EventData;
+	EventData.EventTag = FGameplayTag::RequestGameplayTag("Event.Abilities.Changed");
+	EventData.Instigator = this;
+	EventData.Target = this;
+	
+	UAbilitySystemBlueprintLibrary::SendGameplayEventToActor(this, EventData.EventTag, EventData);
+}
 
 void ACombatGASBaseCharacter::GiveStartUpAbilities()
 {
@@ -44,6 +85,27 @@ void ACombatGASBaseCharacter::InitializeAbilities() const
 	
 	FGameplayEffectContextHandle ContextHandle = GetAbilitySystemComponent()->MakeEffectContext();
 	//GetAbilitySystemComponent()->MakeOutgoingSpec()
+}
+
+void ACombatGASBaseCharacter::PossessedBy(AController* NewController)
+{
+	Super::PossessedBy(NewController);
+	
+	if (AbilitySystemComponent)
+	{
+		AbilitySystemComponent->InitAbilityActorInfo(this, this);
+		GrantAbilities(StartupAbilities);
+	}
+}
+
+void ACombatGASBaseCharacter::OnRep_PlayerState()
+{
+	Super::OnRep_PlayerState();
+	
+	if (AbilitySystemComponent)
+	{
+		AbilitySystemComponent->InitAbilityActorInfo(this, this);
+	}
 }
 
 UAbilitySystemComponent* ACombatGASBaseCharacter::GetAbilitySystemComponent() const
