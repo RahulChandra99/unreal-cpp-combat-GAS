@@ -7,12 +7,15 @@
 #include "AbilitySystemBlueprintLibrary.h"
 #include "CombatRPG/GameplayAbilitySystem/CombatRPGAbilitySystemComponent.h"
 #include "CombatRPG/GameplayAbilitySystem/AttributeSets/BasicAttributeSet.h"
+#include "Components/ArrowComponent.h"
 
 // Sets default values
 ACombatRPGCharacterBase::ACombatRPGCharacterBase()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+	
+	DebugArrow = CreateDefaultSubobject<UArrowComponent>("DebugArrow");
 
 	// Add the ability system component
 	AbilitySystemComponent = CreateDefaultSubobject<UCombatRPGAbilitySystemComponent>(TEXT("AbilitySystemComponent"));
@@ -134,7 +137,21 @@ void ACombatRPGCharacterBase::SendAbilitiesChangedEvent()
 	UAbilitySystemBlueprintLibrary::SendGameplayEventToActor(this, EventData.EventTag, EventData);
 }
 
+
+
 void ACombatRPGCharacterBase::ServerSendGameplayEventToSelf_Implementation(FGameplayEventData EventData)
 {
 	UAbilitySystemBlueprintLibrary::SendGameplayEventToActor(this, EventData.EventTag, EventData);
+}
+
+void ACombatRPGCharacterBase::Debug_SetArrowDirection(const FVector& Direction)
+{
+	if (!DebugArrow) return;
+	
+	if (Direction.IsNearlyZero()) return;
+	
+	if (!bIsArrowDebugActive) return;
+	
+	FRotator TargetRotation = Direction.GetSafeNormal().Rotation();
+	DebugArrow->SetWorldRotation(TargetRotation);
 }

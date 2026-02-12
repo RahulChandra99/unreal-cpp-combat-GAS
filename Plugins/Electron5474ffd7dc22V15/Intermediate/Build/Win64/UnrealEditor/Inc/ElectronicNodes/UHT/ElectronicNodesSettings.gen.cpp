@@ -387,300 +387,476 @@ struct Z_Construct_UClass_UElectronicNodesSettings_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MasterActivate_MetaData[] = {
 		{ "Category", "Activation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Activate or deactivate the whole plugin. Default: true */" },
+#endif
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Activate or deactivate the whole plugin. Default: true" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UseGlobalSettings_MetaData[] = {
 		{ "Category", "Activation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Use global settings across all your projects. When activated, it will load the global settings (overwriting this one).\n\x09If no global settings exists, it will create it based on this one. Future updates will then be saved to global settings. */" },
+#endif
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Use global settings across all your projects. When activated, it will load the global settings (overwriting this one).\n      If no global settings exists, it will create it based on this one. Future updates will then be saved to global settings." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LoadGlobalSettings_MetaData[] = {
 		{ "Category", "Activation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Force reload the global settings (if it was modified outside this instance for example). */" },
+#endif
 		{ "EditCondition", "UseGlobalSettings" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Force reload the global settings (if it was modified outside this instance for example)." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivatePopupOnUpdate_MetaData[] = {
 		{ "Category", "Activation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Display a popup with changelog on update. Default: tru */" },
+#endif
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Display a popup with changelog on update. Default: tru" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivateOnBlueprint_MetaData[] = {
 		{ "Category", "Activation|Schema" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Activate Electronic Nodes on Blueprint graphs. Default: true */" },
+#endif
 		{ "EditCondition", "MasterActivate" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Activate Electronic Nodes on Blueprint graphs. Default: true" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivateOnMaterial_MetaData[] = {
 		{ "Category", "Activation|Schema" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Activate Electronic Nodes on Material graphs. Default: true */" },
+#endif
 		{ "EditCondition", "MasterActivate" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Activate Electronic Nodes on Material graphs. Default: true" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivateOnAnimation_MetaData[] = {
 		{ "Category", "Activation|Schema" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Activate Electronic Nodes on Animation graphs. Default: true */" },
+#endif
 		{ "EditCondition", "MasterActivate" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Activate Electronic Nodes on Animation graphs. Default: true" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivateOnVoxelPlugin_MetaData[] = {
 		{ "Category", "Activation|Schema" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Activate Electronic Nodes on VoxelPlugin (available on the marketplace). Default: true */" },
+#endif
 		{ "EditCondition", "MasterActivate" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Activate Electronic Nodes on VoxelPlugin (available on the marketplace). Default: true" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UseHotPatch_MetaData[] = {
 		{ "Category", "Activation|Schema" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Hot patch hardcoded Unreal functions (only available on Windows) to make some more features available. NEED A RESTART OF THE ENGINE! Default: true */" },
+#endif
 		{ "EditCondition", "MasterActivate" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Hot patch hardcoded Unreal functions (only available on Windows) to make some more features available. NEED A RESTART OF THE ENGINE! Default: true" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivateOnNiagara_MetaData[] = {
 		{ "Category", "Activation|Schema" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Activate Electronic Nodes on Niagara. Default: true */" },
+#endif
 		{ "EditCondition", "MasterActivate && UseHotPatch" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Activate Electronic Nodes on Niagara. Default: true" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivateOnBehaviorTree_MetaData[] = {
 		{ "Category", "Activation|Schema" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Activate Electronic Nodes on Behavior Tree. Default: false */" },
+#endif
 		{ "EditCondition", "MasterActivate && UseHotPatch" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Activate Electronic Nodes on Behavior Tree. Default: false" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivateOnControlRig_MetaData[] = {
 		{ "Category", "Activation|Schema" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Activate Electronic Nodes on Control Rig. Default: true */" },
+#endif
 		{ "EditCondition", "MasterActivate && UseHotPatch" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Activate Electronic Nodes on Control Rig. Default: true" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivateOnMetasound_MetaData[] = {
 		{ "Category", "Activation|Schema" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Activate Electronic Nodes on Metasound. Default: true */" },
+#endif
 		{ "EditCondition", "MasterActivate && UseHotPatch" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Activate Electronic Nodes on Metasound. Default: true" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivateOnReferenceViewer_MetaData[] = {
 		{ "Category", "Activation|Schema" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Activate Electronic Nodes on Reference Viewer. Default: true */" },
+#endif
 		{ "EditCondition", "MasterActivate && UseHotPatch" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Activate Electronic Nodes on Reference Viewer. Default: true" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CustomGraphSchemas_MetaData[] = {
 		{ "Category", "Activation|Schema" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Activate Electronic Nodes on custom graphs. WARNING: some graphs might need Hot Patch, and some graphs might not work at all */" },
+#endif
 		{ "EditCondition", "MasterActivate" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Activate Electronic Nodes on custom graphs. WARNING: some graphs might need Hot Patch, and some graphs might not work at all" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivateFallback_MetaData[] = {
 		{ "Category", "Activation|Debug" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Activate Electronic Nodes everywhere, for debugging purpose only. Default: false */" },
+#endif
 		{ "EditCondition", "MasterActivate" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Activate Electronic Nodes everywhere, for debugging purpose only. Default: false" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DisplaySchemaName_MetaData[] = {
 		{ "Category", "Activation|Debug" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Display schema name in log. Default: false */" },
+#endif
 		{ "EditCondition", "MasterActivate" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Display schema name in log. Default: false" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WireStyle_MetaData[] = {
 		{ "Category", "Wire Style" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Wire style of graph. \"Manhattan\" is for 90deg angles, \"Subway\" is for 45deg angles. */" },
+#endif
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Wire style of graph. \"Manhattan\" is for 90deg angles, \"Subway\" is for 45deg angles." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WireAlignment_MetaData[] = {
 		{ "Category", "Wire Style" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Specify wire alignment. Default: right. */" },
+#endif
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Specify wire alignment. Default: right." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WirePriority_MetaData[] = {
 		{ "Category", "Wire Style" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Specify wire alignment priority (when a Node is connected to a Pin). Default: none. */" },
+#endif
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Specify wire alignment priority (when a Node is connected to a Pin). Default: none." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RoundRadius_MetaData[] = {
 		{ "Category", "Wire Style" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Round radius of the wires. Default: 10 */" },
+#endif
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Round radius of the wires. Default: 10" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WireThickness_MetaData[] = {
 		{ "Category", "Wire Style" },
 		{ "ClampMin", "0.0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Thickness of the wire (multiplier). Default: 1 */" },
+#endif
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Thickness of the wire (multiplier). Default: 1" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MinDistanceToStyle_MetaData[] = {
 		{ "Category", "Wire Style" },
 		{ "ClampMin", "0.0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Bellow this distance, wires will be drawn as straight. Default: 24 */" },
+#endif
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Bellow this distance, wires will be drawn as straight. Default: 24" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MinDistanceStyle_MetaData[] = {
 		{ "Category", "Wire Style" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Style for wires bellow MinDistanceToStyle. Default: Line */" },
+#endif
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Style for wires bellow MinDistanceToStyle. Default: Line" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HorizontalOffset_MetaData[] = {
 		{ "Category", "Wire Style" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Horizontal offset of wires from nodes. Default: 16 */" },
+#endif
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Horizontal offset of wires from nodes. Default: 16" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DisablePinOffset_MetaData[] = {
 		{ "Category", "Wire Style" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Disable the offset for pins. Default: false */" },
+#endif
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Disable the offset for pins. Default: false" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FixZoomDisplacement_MetaData[] = {
 		{ "Category", "Wire Style" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Fix default zoomed-out wire displacement. Default: true */" },
+#endif
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Fix default zoomed-out wire displacement. Default: true" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OverwriteExecWireStyle_MetaData[] = {
 		{ "Category", "Exec Wire Style" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Use a specific draw style for exec wires. Default: false */" },
+#endif
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Use a specific draw style for exec wires. Default: false" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WireStyleForExec_MetaData[] = {
 		{ "Category", "Exec Wire Style" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Specific wire style for exec wires. Default: Manhattan */" },
+#endif
 		{ "EditCondition", "OverwriteExecWireStyle" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Specific wire style for exec wires. Default: Manhattan" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WireAlignmentForExec_MetaData[] = {
 		{ "Category", "Exec Wire Style" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Specify wire alignment for exe wires. Default: right. */" },
+#endif
 		{ "EditCondition", "OverwriteExecWireStyle" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Specify wire alignment for exe wires. Default: right." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WirePriorityForExec_MetaData[] = {
 		{ "Category", "Exec Wire Style" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Specify wire alignment priority (when a Node is connected to a Pin) for exe wires. Default: node. */" },
+#endif
 		{ "EditCondition", "OverwriteExecWireStyle" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Specify wire alignment priority (when a Node is connected to a Pin) for exe wires. Default: node." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivateRibbon_MetaData[] = {
 		{ "Category", "Ribbon Style (experimental)" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Activate ribbon cables for overlapping wires. */" },
+#endif
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Activate ribbon cables for overlapping wires." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RibbonOffset_MetaData[] = {
 		{ "Category", "Ribbon Style (experimental)" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Offset between ribbon wires. Default: 4 */" },
+#endif
 		{ "EditCondition", "ActivateRibbon" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Offset between ribbon wires. Default: 4" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RibbonMergeOffset_MetaData[] = {
 		{ "Category", "Ribbon Style (experimental)" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Offset of wires when merge into ribbon. Default: 20 */" },
+#endif
 		{ "EditCondition", "ActivateRibbon" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Offset of wires when merge into ribbon. Default: 20" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RibbonPushOutside_MetaData[] = {
 		{ "Category", "Ribbon Style (experimental)" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Push the offset outside the node (instead of going for the middle). Default: false */" },
+#endif
 		{ "EditCondition", "ActivateRibbon" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Push the offset outside the node (instead of going for the middle). Default: false" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ForceDrawBubbles_MetaData[] = {
 		{ "Category", "Bubbles Style" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Show moving bubbles on the wires. Default: false */" },
+#endif
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Show moving bubbles on the wires. Default: false" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DrawBubblesOnlyOnExec_MetaData[] = {
 		{ "Category", "Bubbles Style" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Draw bubbles only on exec wires. Default: true */" },
+#endif
 		{ "EditCondition", "ForceDrawBubbles" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Draw bubbles only on exec wires. Default: true" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BubbleDisplayRule_MetaData[] = {
 		{ "Category", "Bubbles Style" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Display rules to show/move bubbles only near selected nodes. Default: Always */" },
+#endif
 		{ "EditCondition", "ForceDrawBubbles" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Display rules to show/move bubbles only near selected nodes. Default: Always" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SelectionRule_MetaData[] = {
 		{ "Category", "Bubbles Style" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* If selection only consider close nodes (near) or every related nodes (far). Default: Near */" },
+#endif
 		{ "EditCondition", "ForceDrawBubbles" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If selection only consider close nodes (near) or every related nodes (far). Default: Near" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BubbleZoomThreshold_MetaData[] = {
 		{ "Category", "Bubbles Style" },
 		{ "ClampMax", "7" },
 		{ "ClampMin", "-12" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Disable bubbles above a certain zoom level. Default: -2 */" },
+#endif
 		{ "EditCondition", "ForceDrawBubbles" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Disable bubbles above a certain zoom level. Default: -2" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BubbleSize_MetaData[] = {
 		{ "Category", "Bubbles Style" },
 		{ "ClampMin", "1.0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Size of bubbles on the wires. Default: 2.0 */" },
+#endif
 		{ "EditCondition", "ForceDrawBubbles" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Size of bubbles on the wires. Default: 2.0" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BubbleSpeed_MetaData[] = {
 		{ "Category", "Bubbles Style" },
 		{ "ClampMin", "0.0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Speed of bubbles on the wires. Default: 4.0 */" },
+#endif
 		{ "EditCondition", "ForceDrawBubbles" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Speed of bubbles on the wires. Default: 4.0" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BubbleSpace_MetaData[] = {
 		{ "Category", "Bubbles Style" },
 		{ "ClampMin", "10.0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Space between bubbles on the wires. Default: 20.0 */" },
+#endif
 		{ "EditCondition", "ForceDrawBubbles" },
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Space between bubbles on the wires. Default: 20.0" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PluginVersionUpdate_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Internal value to fix elements on plugin update. */" },
+#endif
 		{ "ModuleRelativePath", "Public/ElectronicNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Internal value to fix elements on plugin update." },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_MasterActivate_SetBit(void* Obj);
@@ -1003,7 +1179,7 @@ UElectronicNodesSettings::~UElectronicNodesSettings() {}
 // ********** End Class UElectronicNodesSettings ***************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ElectronicNodes_Source_ElectronicNodes_Public_ElectronicNodesSettings_h__Script_ElectronicNodes_Statics
+struct Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_Electron5474ffd7dc22V15_Source_ElectronicNodes_Public_ElectronicNodesSettings_h__Script_ElectronicNodes_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EWireStyle_StaticEnum, TEXT("EWireStyle"), &Z_Registration_Info_UEnum_EWireStyle, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1488415685U) },
@@ -1014,13 +1190,13 @@ struct Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProje
 		{ ESelectionRule_StaticEnum, TEXT("ESelectionRule"), &Z_Registration_Info_UEnum_ESelectionRule, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1268349482U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UElectronicNodesSettings, UElectronicNodesSettings::StaticClass, TEXT("UElectronicNodesSettings"), &Z_Registration_Info_UClass_UElectronicNodesSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UElectronicNodesSettings), 2080264961U) },
+		{ Z_Construct_UClass_UElectronicNodesSettings, UElectronicNodesSettings::StaticClass, TEXT("UElectronicNodesSettings"), &Z_Registration_Info_UClass_UElectronicNodesSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UElectronicNodesSettings), 1917444758U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ElectronicNodes_Source_ElectronicNodes_Public_ElectronicNodesSettings_h__Script_ElectronicNodes_1318036344(TEXT("/Script/ElectronicNodes"),
-	Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ElectronicNodes_Source_ElectronicNodes_Public_ElectronicNodesSettings_h__Script_ElectronicNodes_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ElectronicNodes_Source_ElectronicNodes_Public_ElectronicNodesSettings_h__Script_ElectronicNodes_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_Electron5474ffd7dc22V15_Source_ElectronicNodes_Public_ElectronicNodesSettings_h__Script_ElectronicNodes_2867055721(TEXT("/Script/ElectronicNodes"),
+	Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_Electron5474ffd7dc22V15_Source_ElectronicNodes_Public_ElectronicNodesSettings_h__Script_ElectronicNodes_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_Electron5474ffd7dc22V15_Source_ElectronicNodes_Public_ElectronicNodesSettings_h__Script_ElectronicNodes_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ElectronicNodes_Source_ElectronicNodes_Public_ElectronicNodesSettings_h__Script_ElectronicNodes_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_ElectronicNodes_Source_ElectronicNodes_Public_ElectronicNodesSettings_h__Script_ElectronicNodes_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_Electron5474ffd7dc22V15_Source_ElectronicNodes_Public_ElectronicNodesSettings_h__Script_ElectronicNodes_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_Electron5474ffd7dc22V15_Source_ElectronicNodes_Public_ElectronicNodesSettings_h__Script_ElectronicNodes_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

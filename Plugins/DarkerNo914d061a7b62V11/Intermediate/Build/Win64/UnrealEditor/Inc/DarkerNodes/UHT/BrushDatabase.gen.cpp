@@ -128,14 +128,14 @@ UBrushDatabase::~UBrushDatabase() {}
 // ********** End Class UBrushDatabase *************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_DarkerNodes_Source_DarkerNodes_Private_Lib_BrushDatabase_h__Script_DarkerNodes_Statics
+struct Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNo914d061a7b62V11_Source_DarkerNodes_Private_Lib_BrushDatabase_h__Script_DarkerNodes_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UBrushDatabase, UBrushDatabase::StaticClass, TEXT("UBrushDatabase"), &Z_Registration_Info_UClass_UBrushDatabase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBrushDatabase), 3149210510U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_DarkerNodes_Source_DarkerNodes_Private_Lib_BrushDatabase_h__Script_DarkerNodes_2893511328(TEXT("/Script/DarkerNodes"),
-	Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_DarkerNodes_Source_DarkerNodes_Private_Lib_BrushDatabase_h__Script_DarkerNodes_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_DarkerNodes_Source_DarkerNodes_Private_Lib_BrushDatabase_h__Script_DarkerNodes_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNo914d061a7b62V11_Source_DarkerNodes_Private_Lib_BrushDatabase_h__Script_DarkerNodes_2893511328(TEXT("/Script/DarkerNodes"),
+	Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNo914d061a7b62V11_Source_DarkerNodes_Private_Lib_BrushDatabase_h__Script_DarkerNodes_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNo914d061a7b62V11_Source_DarkerNodes_Private_Lib_BrushDatabase_h__Script_DarkerNodes_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

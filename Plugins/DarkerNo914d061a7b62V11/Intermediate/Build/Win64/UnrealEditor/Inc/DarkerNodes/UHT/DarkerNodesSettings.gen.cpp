@@ -600,61 +600,97 @@ struct Z_Construct_UClass_UDarkerNodesSettings_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MasterActivate_MetaData[] = {
 		{ "Category", "Activation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Activate or deactivate the whole plugin. Default: true */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Activate or deactivate the whole plugin. Default: true" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UseGlobalSettings_MetaData[] = {
 		{ "Category", "Activation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Use global settings across all your projects. When activated, it will load the global settings (overwriting this one).\n\x09If no global settings exists, it will create it based on this one. Future updates will then be saved to global settings. */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Use global settings across all your projects. When activated, it will load the global settings (overwriting this one).\n      If no global settings exists, it will create it based on this one. Future updates will then be saved to global settings." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LoadGlobalSettings_MetaData[] = {
 		{ "Category", "Activation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Force reload the global settings (if it was modified outside this instance for example). */" },
+#endif
 		{ "EditCondition", "UseGlobalSettings" },
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Force reload the global settings (if it was modified outside this instance for example)." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReloadDefaultStyle_MetaData[] = {
 		{ "Category", "Activation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Reload the default style (you must disable Master Activate first). */" },
+#endif
 		{ "EditCondition", "!MasterActivate" },
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Reload the default style (you must disable Master Activate first)." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivatePopupOnUpdate_MetaData[] = {
 		{ "Category", "Activation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Display a popup with changelog on update. Default: tru */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Display a popup with changelog on update. Default: tru" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UpdateMaterials_MetaData[] = {
 		{ "Category", "Activation" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* This should fix missing elements by updating and saving the theme materials. */" },
+#endif
 		{ "DisplayName", "Fix Missing Elements" },
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This should fix missing elements by updating and saving the theme materials." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PluginVersionUpdate_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Internal value to fix elements on plugin update. */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Internal value to fix elements on plugin update." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Preset_MetaData[] = {
 		{ "Category", "Theme" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Select a theme preset */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Select a theme preset" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ThemeLuminosity_MetaData[] = {
 		{ "Category", "Theme" },
 		{ "ClampMax", "100" },
 		{ "ClampMin", "-100" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Variations of luminosity of the theme (making it lighter or darker). Default: 0 */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Variations of luminosity of the theme (making it lighter or darker). Default: 0" },
+#endif
 		{ "UIMax", "100" },
 		{ "UIMin", "-100" },
 	};
@@ -662,9 +698,13 @@ struct Z_Construct_UClass_UDarkerNodesSettings_Statics
 		{ "Category", "Theme" },
 		{ "ClampMax", "100" },
 		{ "ClampMin", "-100" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Variations of the saturation of the theme (making it greyer or more colorful). Default: 10 */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Variations of the saturation of the theme (making it greyer or more colorful). Default: 10" },
+#endif
 		{ "UIMax", "100" },
 		{ "UIMin", "-100" },
 	};
@@ -672,116 +712,180 @@ struct Z_Construct_UClass_UDarkerNodesSettings_Statics
 		{ "Category", "Theme" },
 		{ "ClampMax", "360" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Variations of the hue of the theme (changing the color). Default: 30 */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Variations of the hue of the theme (changing the color). Default: 30" },
+#endif
 		{ "UIMax", "360" },
 		{ "UIMin", "0" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_KeepForegroundLuminosity_MetaData[] = {
 		{ "Category", "Theme" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Keep font luminosity, useful when you use a low luminosity */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Keep font luminosity, useful when you use a low luminosity" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LightTheme_MetaData[] = {
 		{ "Category", "Theme" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Use light theme and invert luminosity (warning: experimental feature) */" },
+#endif
 		{ "DisplayName", "Light Theme (experimental)" },
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Use light theme and invert luminosity (warning: experimental feature)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FontSize_MetaData[] = {
 		{ "Category", "Fonts" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Font to use in the editor (it won't work on all texts). Default: Normal */" },
+#endif
 		{ "DisplayName", "Font Size (experimental)" },
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Font to use in the editor (it won't work on all texts). Default: Normal" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FontFamily_MetaData[] = {
 		{ "Category", "Fonts" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Font to use in the editor. Default: Roboto */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Font to use in the editor. Default: Roboto" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UseCustomRegularFont_MetaData[] = {
 		{ "Category", "Fonts" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Use a custom font for regular texts. Default: false */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Use a custom font for regular texts. Default: false" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RegularFont_MetaData[] = {
 		{ "Category", "Fonts" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Path to the regular TTF font. */" },
+#endif
 		{ "EditCondition", "UseCustomRegularFont" },
 		{ "FilePathFilter", "ttf" },
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Path to the regular TTF font." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UseCustomBoldFont_MetaData[] = {
 		{ "Category", "Fonts" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Use a custom font for bold texts. Default: false */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Use a custom font for bold texts. Default: false" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BoldFont_MetaData[] = {
 		{ "Category", "Fonts" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Path to the bold TTF font. */" },
+#endif
 		{ "EditCondition", "UseCustomBoldFont" },
 		{ "FilePathFilter", "ttf" },
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Path to the bold TTF font." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UseCustomItalicFont_MetaData[] = {
 		{ "Category", "Fonts" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Use a custom font for italic texts. Default: false */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Use a custom font for italic texts. Default: false" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ItalicFont_MetaData[] = {
 		{ "Category", "Fonts" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Path to the italic TTF font. */" },
+#endif
 		{ "EditCondition", "UseCustomItalicFont" },
 		{ "FilePathFilter", "ttf" },
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Path to the italic TTF font." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActivateBlueprintTheme_MetaData[] = {
 		{ "Category", "Blueprint" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Activate or deactivate the blueprint theme. Default: true */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Activate or deactivate the blueprint theme. Default: true" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BlueprintRegularNodeRadius_MetaData[] = {
 		{ "Category", "Blueprint" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Radius of regular nodes. Default: 2px */" },
+#endif
 		{ "EditCondition", "ActivateBlueprintTheme" },
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Radius of regular nodes. Default: 2px" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BlueprintVarNodeRadius_MetaData[] = {
 		{ "Category", "Blueprint" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Radius of var nodes. Default: 2px */" },
+#endif
 		{ "EditCondition", "ActivateBlueprintTheme" },
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Radius of var nodes. Default: 2px" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BlueprintVarNodeLine_MetaData[] = {
 		{ "Category", "Blueprint" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Style of the VarNode top line. Default: Thin */" },
+#endif
 		{ "EditCondition", "ActivateBlueprintTheme" },
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Style of the VarNode top line. Default: Thin" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BlueprintVarNodeOpacity_MetaData[] = {
 		{ "Category", "Blueprint" },
 		{ "ClampMax", "1" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Variations of the grey background (making it lighter or darker). Default: darker */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Variations of the grey background (making it lighter or darker). Default: darker" },
+#endif
 		{ "UIMax", "1" },
 		{ "UIMin", "0" },
 	};
@@ -789,150 +893,238 @@ struct Z_Construct_UClass_UDarkerNodesSettings_Statics
 		{ "Category", "Blueprint" },
 		{ "ClampMax", "1" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Opacity of blueprint nodes header. Default: 0.25 */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Opacity of blueprint nodes header. Default: 0.25" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BlueprintNodeHeaderSaturation_MetaData[] = {
 		{ "Category", "Blueprint" },
 		{ "ClampMax", "1" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Saturation of blueprint nodes header. Default: 1.0 */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Saturation of blueprint nodes header. Default: 1.0" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ExtendNodes_MetaData[] = {
 		{ "Category", "Blueprint" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Add a padding to make nodes match the grid on the top left corner. Default: false */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Add a padding to make nodes match the grid on the top left corner. Default: false" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DisableBlueprintGrid_MetaData[] = {
 		{ "Category", "Blueprint" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Disable the blueprint grid. Default: false */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Disable the blueprint grid. Default: false" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DisableUMGGrid_MetaData[] = {
 		{ "Category", "Blueprint" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Disable the UMG grid. Default: false */" },
+#endif
 		{ "EditCondition", "DisableBlueprintGrid" },
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Disable the UMG grid. Default: false" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OriginAxisOpacity_MetaData[] = {
 		{ "Category", "Blueprint" },
 		{ "ClampMax", "1" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Opacity of the origin axis of the background grid. Default: 1.0 */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Opacity of the origin axis of the background grid. Default: 1.0" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_KeepDefaultCommentColor_MetaData[] = {
 		{ "Category", "Blueprint" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Keep the default color of blueprint comments. Default: false */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Keep the default color of blueprint comments. Default: false" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OverwriteColors_MetaData[] = {
 		{ "Category", "Customization" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* When \"Use [Type] Customization\" is unticked, overwrite the customized colors with the current theme colors. Default: true */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "When \"Use [Type] Customization\" is unticked, overwrite the customized colors with the current theme colors. Default: true" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UseColorCustomization_MetaData[] = {
 		{ "Category", "Customization|Color" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Customize the colors more in-depth. Default: false */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Customize the colors more in-depth. Default: false" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TextColor_MetaData[] = {
 		{ "Category", "Customization|Color" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Text color of the theme. Default: RGB(200,200,200) */" },
+#endif
 		{ "EditCondition", "UseColorCustomization" },
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Text color of the theme. Default: RGB(200,200,200)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UseWindowCustomization_MetaData[] = {
 		{ "Category", "Customization|Windows" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Customize the colors more in-depth. Default: false */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Customize the colors more in-depth. Default: false" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MainWindowColor_MetaData[] = {
 		{ "Category", "Customization|Windows" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Outline color of the main editor window. Default: RGB(40,40,40) */" },
+#endif
 		{ "EditCondition", "UseWindowCustomization" },
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Outline color of the main editor window. Default: RGB(40,40,40)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ChildWindowColor_MetaData[] = {
 		{ "Category", "Customization|Windows" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Outline color of child editor windows. Default: RGB(40,40,40) */" },
+#endif
 		{ "EditCondition", "UseWindowCustomization" },
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Outline color of child editor windows. Default: RGB(40,40,40)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UseBlueprintColorCustomization_MetaData[] = {
 		{ "Category", "Customization|Blueprint" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Customize the colors of Blueprint graphs. Default: false */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Customize the colors of Blueprint graphs. Default: false" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GridLineColor_MetaData[] = {
 		{ "Category", "Customization|Blueprint" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Color for grid lines in Blueprint graphs and UMG editor. */" },
+#endif
 		{ "EditCondition", "UseBlueprintColorCustomization" },
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Color for grid lines in Blueprint graphs and UMG editor." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GridRuleColor_MetaData[] = {
 		{ "Category", "Customization|Blueprint" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Color for grid rules in Blueprint graphs and UMG editor. */" },
+#endif
 		{ "EditCondition", "UseBlueprintColorCustomization" },
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Color for grid rules in Blueprint graphs and UMG editor." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GridCenterColor_MetaData[] = {
 		{ "Category", "Customization|Blueprint" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Color for grid center in Blueprint graphs and UMG editor. */" },
+#endif
 		{ "EditCondition", "UseBlueprintColorCustomization" },
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Color for grid center in Blueprint graphs and UMG editor." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RegularNodeBackground_MetaData[] = {
 		{ "Category", "Customization|Blueprint" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Background of regular Blueprint nodes. */" },
+#endif
 		{ "EditCondition", "UseBlueprintColorCustomization" },
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Background of regular Blueprint nodes." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RegularNodeBorder_MetaData[] = {
 		{ "Category", "Customization|Blueprint" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Border of regular Blueprint nodes. */" },
+#endif
 		{ "EditCondition", "UseBlueprintColorCustomization" },
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Border of regular Blueprint nodes." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_VarNodeBackground_MetaData[] = {
 		{ "Category", "Customization|Blueprint" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Background of var Blueprint nodes. */" },
+#endif
 		{ "EditCondition", "UseBlueprintColorCustomization" },
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Background of var Blueprint nodes." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_VarNodeBorder_MetaData[] = {
 		{ "Category", "Customization|Blueprint" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Border of var Blueprint nodes. */" },
+#endif
 		{ "EditCondition", "UseBlueprintColorCustomization" },
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Border of var Blueprint nodes." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReloadTextureResources_MetaData[] = {
 		{ "Category", "Debug" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Force texture resources reload. */" },
+#endif
 		{ "ModuleRelativePath", "Public/DarkerNodesSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Force texture resources reload." },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_MasterActivate_SetBit(void* Obj);
@@ -1239,7 +1431,7 @@ UDarkerNodesSettings::~UDarkerNodesSettings() {}
 // ********** End Class UDarkerNodesSettings *******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_DarkerNodes_Source_DarkerNodes_Public_DarkerNodesSettings_h__Script_DarkerNodes_Statics
+struct Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNo914d061a7b62V11_Source_DarkerNodes_Public_DarkerNodesSettings_h__Script_DarkerNodes_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EPresets_StaticEnum, TEXT("EPresets"), &Z_Registration_Info_UEnum_EPresets, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1393925167U) },
@@ -1253,13 +1445,13 @@ struct Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProje
 		{ EIconStyle_StaticEnum, TEXT("EIconStyle"), &Z_Registration_Info_UEnum_EIconStyle, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1756774388U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UDarkerNodesSettings, UDarkerNodesSettings::StaticClass, TEXT("UDarkerNodesSettings"), &Z_Registration_Info_UClass_UDarkerNodesSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDarkerNodesSettings), 2310481725U) },
+		{ Z_Construct_UClass_UDarkerNodesSettings, UDarkerNodesSettings::StaticClass, TEXT("UDarkerNodesSettings"), &Z_Registration_Info_UClass_UDarkerNodesSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDarkerNodesSettings), 915287536U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_DarkerNodes_Source_DarkerNodes_Public_DarkerNodesSettings_h__Script_DarkerNodes_203298226(TEXT("/Script/DarkerNodes"),
-	Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_DarkerNodes_Source_DarkerNodes_Public_DarkerNodesSettings_h__Script_DarkerNodes_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_DarkerNodes_Source_DarkerNodes_Public_DarkerNodesSettings_h__Script_DarkerNodes_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNo914d061a7b62V11_Source_DarkerNodes_Public_DarkerNodesSettings_h__Script_DarkerNodes_2435170765(TEXT("/Script/DarkerNodes"),
+	Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNo914d061a7b62V11_Source_DarkerNodes_Public_DarkerNodesSettings_h__Script_DarkerNodes_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNo914d061a7b62V11_Source_DarkerNodes_Public_DarkerNodesSettings_h__Script_DarkerNodes_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_DarkerNodes_Source_DarkerNodes_Public_DarkerNodesSettings_h__Script_DarkerNodes_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_DarkerNodes_Source_DarkerNodes_Public_DarkerNodesSettings_h__Script_DarkerNodes_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNo914d061a7b62V11_Source_DarkerNodes_Public_DarkerNodesSettings_h__Script_DarkerNodes_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNo914d061a7b62V11_Source_DarkerNodes_Public_DarkerNodesSettings_h__Script_DarkerNodes_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

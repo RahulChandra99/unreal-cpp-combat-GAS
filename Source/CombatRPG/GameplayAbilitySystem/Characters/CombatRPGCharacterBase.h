@@ -30,6 +30,12 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AbilitySystem")
 	TArray<TSubclassOf<UGameplayAbility>> StartingAbilities;
+	
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Debug")
+	UArrowComponent* DebugArrow;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Debug")
+	bool bIsArrowDebugActive;
 
 protected:
 	// Called when the game starts or when spawned
@@ -59,4 +65,9 @@ public:
 
 	UFUNCTION(Server, Reliable, BlueprintCallable, Category = "AbilitySystem")
 	void ServerSendGameplayEventToSelf(FGameplayEventData EventData);
+	
+protected:
+	
+	UFUNCTION(BlueprintCallable, Category = "Debug")
+	void Debug_SetArrowDirection(const FVector& Direction);
 };

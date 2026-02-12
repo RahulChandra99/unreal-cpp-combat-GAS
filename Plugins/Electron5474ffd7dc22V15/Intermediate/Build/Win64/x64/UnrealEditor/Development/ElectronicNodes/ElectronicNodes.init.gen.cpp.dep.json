@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\gamedevelopment\\unrealengine\\projects\\unreal-cpp-combat-gas\\plugins\\electron5474ffd7dc22v15\\intermediate\\build\\win64\\unrealeditor\\inc\\electronicnodes\\uht\\electronicnodes.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\gamedevelopment\\unrealengine\\projects\\unreal-cpp-combat-gas\\intermediate\\build\\win64\\x64\\combatrpgeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "d:\\gamedevelopment\\unrealengine\\projects\\unreal-cpp-combat-gas\\plugins\\electron5474ffd7dc22v15\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\electronicnodes\\definitions.electronicnodes.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
