@@ -11,6 +11,7 @@
 - [Gameplay Ability System](#gameplay-ability-system)
 - [Gameplay Abilities](#gameplay-abilities)
   - [Dash Ability](#dash-ability)
+  - [Area Of Attack Ability](#area-of-attack-ability)
   
 
 ---
@@ -324,5 +325,67 @@ UAnimMontage* UDashAbility::GetDashMontageForDirection(EDashDirection Direction)
 
 - Cosmetic Feedback : Gameplay Cue handles VFX and sound without affecting gameplay logic.
 
+---
 
+## Area Of Attack Ability
+
+The ability performs a radial melee attack around the character, detects valid targets using a sphere overlap, applies damage via Gameplay Effects, and triggers replicated visual feedback.
+
+### Execution Pipeline
+
+1. Ability activation event received  
+2. Ability commit validates cost and cooldown  
+3. Attack montage plays  
+4. Sphere overlap executed on server  
+5. Targets filtered using Gameplay Tags  
+6. Damage Gameplay Effect applied to each valid target  
+7. Gameplay Cue triggers impact VFX and audio  
+8. Ability ends after montage completion  
+
+---
+
+### Radial Target Detection System
+
+The attack uses a sphere overlap query on the server to detect all actors within range. Targets are validated to prevent self hit and friendly fire.
+
+<details>
+<summary><b><i>View Code</i></b></summary>
+
+```cpp
+void UAreaAttackAbility::PerformAreaAttack()
+{
+    AActor* Avatar = GetAvatarActorFromActorInfo();
+    if (!Avatar) return;
+
+    FVector Origin = Avatar->GetActorLocation();
+
+    TArray<FOverlapResult> Overlaps;
+
+    FCollisionShape Sphere = FCollisionShape::MakeSphere(AttackRadius);
+
+    bool bHit = GetWorld()->OverlapMultiByChannel(
+        Overlaps,
+        Origin,
+        FQuat::Identity,
+        ECC_Pawn,
+        Sphere
+    );
+
+    if (!bHit) return;
+
+    for (const FOverlapResult& Result : Overlaps)
+    {
+        AActor* Target = Result.GetActor();
+        if (!Target || Target == Avatar) continue;
+
+        if (!IsValidTarget(Target)) continue;
+
+        ApplyDamageEffectToTarget(Target);
+    }
+}
+```
+</details>
+<img width="3123" height="1446" alt="GA_AOEAttack_EventGraph_00000" src="https://github.com/user-attachments/assets/1260da13-5889-44ce-a9f2-156b3f942351" />
+<img width="3975" height="1526" alt="GA_AOEAttack_EventGraph_00001" src="https://github.com/user-attachments/assets/2d48cbc4-5ca8-44c5-b62a-c3e4e28d30a6" />
+<img width="3654" height="2290" alt="GC_AOEMultipleAttack_EventGraph_00000" src="https://github.com/user-attachments/assets/71f696ca-d494-4651-9f46-9b6606e3a4c0" />
 
