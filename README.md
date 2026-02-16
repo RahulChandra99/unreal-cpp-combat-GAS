@@ -22,6 +22,8 @@ This project is a third person multiplayer gameplay framework built around Unrea
 
 The system focuses on scalable ability architecture, replicated gameplay state, and modular C++ design with Blueprint friendly APIs.
 
+Developed along with Game FX Artist : https://www.linkedin.com/in/kavya-swaminathan-/
+
 ### Goals
 
 - Server authoritative multiplayer abilities
