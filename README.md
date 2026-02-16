@@ -37,8 +37,8 @@ The system focuses on scalable ability architecture, replicated gameplay state, 
 Click the image below to watch the demo:
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=21OzrVktwzA" target="_blank">
-    <img src="https://github.com/user-attachments/assets/4eddc091-8649-4187-a79c-8fa5acec11e9" width="600"/>
+  <a href="https://www.youtube.com/watch?v=w7YCiTBzDqA" target="_blank">
+    <img src="https://github.com/user-attachments/assets/35b8e5e2-489d-491e-b0e8-0feebf5a9f23" width="600"/>
   </a>
 </p>
 
