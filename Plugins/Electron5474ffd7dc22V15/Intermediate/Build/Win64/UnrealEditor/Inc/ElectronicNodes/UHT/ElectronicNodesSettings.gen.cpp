@@ -1179,7 +1179,7 @@ UElectronicNodesSettings::~UElectronicNodesSettings() {}
 // ********** End Class UElectronicNodesSettings ***************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_Electron5474ffd7dc22V15_Source_ElectronicNodes_Public_ElectronicNodesSettings_h__Script_ElectronicNodes_Statics
+struct Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_GithubProjects_unreal_cpp_combat_GAS_Plugins_Electron5474ffd7dc22V15_Source_ElectronicNodes_Public_ElectronicNodesSettings_h__Script_ElectronicNodes_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EWireStyle_StaticEnum, TEXT("EWireStyle"), &Z_Registration_Info_UEnum_EWireStyle, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1488415685U) },
@@ -1193,10 +1193,10 @@ struct Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cp
 		{ Z_Construct_UClass_UElectronicNodesSettings, UElectronicNodesSettings::StaticClass, TEXT("UElectronicNodesSettings"), &Z_Registration_Info_UClass_UElectronicNodesSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UElectronicNodesSettings), 1917444758U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_Electron5474ffd7dc22V15_Source_ElectronicNodes_Public_ElectronicNodesSettings_h__Script_ElectronicNodes_2867055721(TEXT("/Script/ElectronicNodes"),
-	Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_Electron5474ffd7dc22V15_Source_ElectronicNodes_Public_ElectronicNodesSettings_h__Script_ElectronicNodes_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_Electron5474ffd7dc22V15_Source_ElectronicNodes_Public_ElectronicNodesSettings_h__Script_ElectronicNodes_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_GithubProjects_unreal_cpp_combat_GAS_Plugins_Electron5474ffd7dc22V15_Source_ElectronicNodes_Public_ElectronicNodesSettings_h__Script_ElectronicNodes_2867055721(TEXT("/Script/ElectronicNodes"),
+	Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_GithubProjects_unreal_cpp_combat_GAS_Plugins_Electron5474ffd7dc22V15_Source_ElectronicNodes_Public_ElectronicNodesSettings_h__Script_ElectronicNodes_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_GithubProjects_unreal_cpp_combat_GAS_Plugins_Electron5474ffd7dc22V15_Source_ElectronicNodes_Public_ElectronicNodesSettings_h__Script_ElectronicNodes_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_Electron5474ffd7dc22V15_Source_ElectronicNodes_Public_ElectronicNodesSettings_h__Script_ElectronicNodes_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_Electron5474ffd7dc22V15_Source_ElectronicNodes_Public_ElectronicNodesSettings_h__Script_ElectronicNodes_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_GithubProjects_unreal_cpp_combat_GAS_Plugins_Electron5474ffd7dc22V15_Source_ElectronicNodes_Public_ElectronicNodesSettings_h__Script_ElectronicNodes_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_GithubProjects_unreal_cpp_combat_GAS_Plugins_Electron5474ffd7dc22V15_Source_ElectronicNodes_Public_ElectronicNodesSettings_h__Script_ElectronicNodes_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

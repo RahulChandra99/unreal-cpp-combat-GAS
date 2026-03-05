@@ -1431,7 +1431,7 @@ UDarkerNodesSettings::~UDarkerNodesSettings() {}
 // ********** End Class UDarkerNodesSettings *******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNo914d061a7b62V11_Source_DarkerNodes_Public_DarkerNodesSettings_h__Script_DarkerNodes_Statics
+struct Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_GithubProjects_unreal_cpp_combat_GAS_Plugins_DarkerNo914d061a7b62V11_Source_DarkerNodes_Public_DarkerNodesSettings_h__Script_DarkerNodes_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EPresets_StaticEnum, TEXT("EPresets"), &Z_Registration_Info_UEnum_EPresets, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1393925167U) },
@@ -1448,10 +1448,10 @@ struct Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cp
 		{ Z_Construct_UClass_UDarkerNodesSettings, UDarkerNodesSettings::StaticClass, TEXT("UDarkerNodesSettings"), &Z_Registration_Info_UClass_UDarkerNodesSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDarkerNodesSettings), 915287536U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNo914d061a7b62V11_Source_DarkerNodes_Public_DarkerNodesSettings_h__Script_DarkerNodes_2435170765(TEXT("/Script/DarkerNodes"),
-	Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNo914d061a7b62V11_Source_DarkerNodes_Public_DarkerNodesSettings_h__Script_DarkerNodes_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNo914d061a7b62V11_Source_DarkerNodes_Public_DarkerNodesSettings_h__Script_DarkerNodes_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_GithubProjects_unreal_cpp_combat_GAS_Plugins_DarkerNo914d061a7b62V11_Source_DarkerNodes_Public_DarkerNodesSettings_h__Script_DarkerNodes_2435170765(TEXT("/Script/DarkerNodes"),
+	Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_GithubProjects_unreal_cpp_combat_GAS_Plugins_DarkerNo914d061a7b62V11_Source_DarkerNodes_Public_DarkerNodesSettings_h__Script_DarkerNodes_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_GithubProjects_unreal_cpp_combat_GAS_Plugins_DarkerNo914d061a7b62V11_Source_DarkerNodes_Public_DarkerNodesSettings_h__Script_DarkerNodes_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNo914d061a7b62V11_Source_DarkerNodes_Public_DarkerNodesSettings_h__Script_DarkerNodes_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_unreal_cpp_combat_GAS_Plugins_DarkerNo914d061a7b62V11_Source_DarkerNodes_Public_DarkerNodesSettings_h__Script_DarkerNodes_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_GithubProjects_unreal_cpp_combat_GAS_Plugins_DarkerNo914d061a7b62V11_Source_DarkerNodes_Public_DarkerNodesSettings_h__Script_DarkerNodes_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GameDevelopment_UnrealEngine_Projects_GithubProjects_unreal_cpp_combat_GAS_Plugins_DarkerNo914d061a7b62V11_Source_DarkerNodes_Public_DarkerNodesSettings_h__Script_DarkerNodes_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
