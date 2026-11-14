@@ -98,3 +98,15 @@ DerivedDataCache/*
 /Content/AxeAndShield
 /Content/BigLocomotionPackV04
 /Content/Bjorn_Viking
+
+# Build output, including inside plugins
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+
+# Per-user editor files
+*.DotSettings.user
+.DS_Store
